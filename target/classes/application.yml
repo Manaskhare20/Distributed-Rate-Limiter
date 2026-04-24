@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: distributed-rate-limiter
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ratelimiter
+    username: ratelimiter
+    password: ratelimiter
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        jdbc:
+          time_zone: UTC   # ⭐ IMPORTANT FIX
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  jackson:
+    time-zone: UTC
+
+  
+
+server:
+  port: 8080
+
+

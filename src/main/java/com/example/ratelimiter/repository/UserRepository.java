@@ -1,0 +1,8 @@
+package com.example.ratelimiter.repository;
+
+import com.example.ratelimiter.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, String> {
+}
+
