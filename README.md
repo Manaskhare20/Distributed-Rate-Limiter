@@ -1,6 +1,6 @@
 ## Distributed Rate Limiter as a Service
+A high-performance distributed rate limiter built using Spring Boot, Redis (Lua scripting), and PostgreSQL.
 
-Java 17 Spring Boot application implementing a **distributed, stateless Token Bucket rate limiter** backed by **Redis** and **PostgreSQL**.
 
 ### Architecture
 
